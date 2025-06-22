@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projet 4 – Modélisation linéaire multivariée</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f7f9fb;
+      color: #333;
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: justify;
+    }
+
+    h1, h2 {
+      color:black;
+    }
+
+    header {
+      background: #b5c9ff;
+      color: black;
+      padding: 20px;
+      text-align: center;
+      border-radius: 0 0 30px 30px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 15px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .pdf-container {
+      margin: 30px 0;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .definition {
+      background: #e6f0ff;
+      border-left: 5px solid #b5c9ff;
+      padding: 10px 15px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+    a.back {
+      display: inline-block;
+      margin: 20px 0;
+      color: #b5c9ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .tools {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    .tools img {
+      height: 80px;
+      width: auto;
+    }
+  </style>
+</head>
+<body>
+
+<a href="projets.html" class="back">← Retour à la liste des projets</a>
+
+<header><h1>Explication et prédiction de l'âge de décès à partir de plusieurs facteurs (santé, sociaux, mode de vie...)</h1></header>
+<h2>SAÉ 4.01 – Expliquer ou prédire une variable quantitative à partir de plusieurs facteurs</h2>
+<p><strong>Compétence principale mobilisée</strong> : Modéliser les données dans un cadre statistique</p>
+
+<h2>Description du projet</h2>
+<p>
+  Dans le cadre de cette SAÉ, notre groupe a travaillé sur un jeu de données réel dans le but de modéliser une variable quantitative à partir de plusieurs variables explicatives. Le projet s’inscrit dans une démarche d’analyse statistique multivariée, visant à comprendre les facteurs influençant la variable d’intérêt et à construire un modèle prédictif fiable.
+</p>
+<p>
+  Le travail s’est déroulé en deux grandes étapes : une première phase exploratoire et de préparation des données, suivie d’une phase de modélisation, validation et interprétation des résultats.
+</p>
+
+<h2>Présentation de l'application</h2>
+<p>
+  Le projet a été réalisé sous R dans un notebook structuré. Voici les grandes étapes de l’analyse :
+</p>
+<ul>
+  <li>Exploration des données : statistiques descriptives, visualisations, gestion des valeurs manquantes</li>
+  <li>Analyse des relations entre la variable cible et les prédicteurs</li>
+  <li>Modélisation par régression linéaire multiple</li>
+  <li>Sélection des variables pertinentes à l’aide de critères (AIC, R² ajusté, p-value)</li>
+  <li>Vérification des hypothèses du modèle (normalité des résidus, homoscédasticité, multicolinéarité)</li>
+  <li>Interprétation des coefficients et de la qualité de la prédiction</li>
+</ul>
+
+<h3>Lien vers le notebook</h3>
+<a href="docs/SAE_401_age_mort (1).html" class="btn" target="_blank">Voir le notebook</a>
+
+
+<h2>Livrables</h2>
+<ul>
+  <li>Notebook HTML commenté avec l’ensemble de l’analyse</li>
+  <li>Présentation orale résumant la démarche et les résultats</li>
+  <li>Rapport écrit synthétisant le déroulé du projet et la méthodologie</li>
+</ul>
+
+<h2>Compétence mise en avant</h2>
+<p>
+  Ce projet m’a permis de mobiliser mes compétences en modélisation statistique dans un cadre professionnel : du nettoyage des données à l’interprétation rigoureuse d’un modèle, en passant par la justification des choix méthodologiques. Il m’a également appris à communiquer des résultats complexes de manière claire et pédagogique.
+</p>
+
+
+<h2>Outils utilisés</h2>
+<div class="tools">
+  <img src="images/logo_r.png" alt="R">
+  <img src="images/logo_excel.png" alt="Excel">
+  <img src="images/logo_word.png" alt="Word">
+  <img src="images/logo_ppt.png" alt="PowerPoint">
+</div>
+
+<h2>Méthodes statistiques : </h2>
+	<li>Modelisation linéaire simple</li>
+	<li>Modelisation linéaire multiple</li>
+	<li>Analyse comparative de modèles</li>
+	<li>Test d'hypothèses ( normalité, Breusch-Pagan...)</li>
+
+<p> Voici un aperçu de la présentation que nous avons utilisée lors de la soutenance du projet.</p>
+
+<div class="pdf-container">
+  <iframe src="docs/diapo_sasha_romane_soline.pdf"></iframe>
+</div>
+
+
+
+</body>
+</html>
+

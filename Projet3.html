@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css">
+  <title>Projet 3 - Analyse multivariée et ACP sur des données de criminalité au États Unis</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f7f9fb;
+      color: #333;
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+	  text-align: justify;
+    }
+
+    h1, h2 {
+      color:black;
+    }
+	
+	header {
+            background: #b5c9ff;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            border-radius: 0 0 30px 30px;
+        }
+	header h1 {
+		margin: 0;
+	}
+
+
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 15px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .pdf-container {
+      margin: 30px 0;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .definition {
+      background: #e6f0ff;
+      border-left: 5px solid #b5c9ff;
+      padding: 10px 15px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+   a.back {
+            display: inline-block;
+            margin: 20px 0;
+            color: #b5c9ff;
+            text-decoration: none;
+            font-weight: 600;
+	}
+	
+	.tools {
+	  display: flex;
+	  gap: 10px;
+	  align-items: center;
+	  margin: 10px 0;
+	}
+	.tools img {
+	  height: 80px;
+	  width: auto;
+	}
+  </style>
+</head>
+<body>
+
+<a href="projets.html" class="back">← Retour à la liste des projets</a>
+
+ <header> <h1> Analyse multivariée de la criminalité aux États-Unis (2019)</h1></header>
+  <h2>SAÉ 4. 02 : Reporting d'une analyse multivariée</h2>
+  <p><strong>Compétence principale mobilisée </strong> :Analyser statistiquement des données</p>
+
+  <p>
+    Dans ce projet, j’ai développé une application R-Shiny dans le cadre de la SAÉ sur le reporting automatisé et l’analyse exploratoire multivariée. L’objectif était de proposer une solution interactive et complète permettant de mieux comprendre les facteurs liés à la criminalité aux États-Unis en 2019, en mettant en œuvre une analyse en composantes principales (ACP).
+  </p>
+
+  <h2> Présentation de l’application</h2>
+  <p>L’application se compose de quatre onglets principaux, chacun permettant une étape spécifique d’analyse statistique :</p>
+
+  <h3> 1. Résumé des données</h3>
+  <p>Vue d’ensemble du jeu de données : structure, variables, nombre d’observations, etc.</p>
+  <img src="images/acp1.png" alt="Résumé des données" class="capture">
+
+  <h3> 2. Analyse descriptive</h3>
+  <p>Analyse univariée (distribution d’une variable) avec quelques indicateurs comme la moyenne, l'écart type et la médiane ou encore la distribution de la variable géographiquement et bivariée (relation entre deux variables au choix).</p>
+  <img src="images/acp2.png" alt="Analyse descriptive" class="capture">
+
+  <h3> 3. Matrice de corrélation</h3>
+  <p>Visualisation des corrélations entre variables avec la possibilité de filtrer dynamiquement.</p>
+  <img src="images/acp3.png" alt="Matrice de corrélation" class="capture">
+
+  <h3> 4. Analyse en Composantes Principales (ACP)</h3>
+  <p>Analyse complète de l’ACP : axes, variables, individus, cos², contributions, etc.</p>
+  <img src="images/acp4.png" alt="ACP - Analyse en Composantes Principales" class="capture">
+ 
+   <h3>Accès à l’application complète</h3>
+  <p><a href="https://soline-thomas.shinyapps.io/partie_2/" target="_blank" class="btn">🔎 Lancer l'application</a></p>
+  
+
+
+  <h2>Outils utilisés</h2>
+  <div class="tools">
+    <img src="images/logo_r.png" alt="Rstudio">
+    <img src="images/logo_excel.png" alt="Excel">
+    <img src="images/logo_word.png" alt="Word">
+    <img src="images/logo_ppt.png" alt="PowerPoint">
+  </div>
+
+ <h2>Méthodes statistiques : </h2>
+	<li>moyenne, corrélation, ACP…</li>
+
+
+  <h2>Objectifs pédagogiques</h2>
+  <ul>
+    <li>Concevoir une interface de restitution automatisée</li>
+    <li>Appliquer l’analyse exploratoire sur un jeu de données réel</li>
+    <li>Interpréter les résultats d’une ACP dans un contexte métier</li>
+    <li>Structurer les résultats pour la prise de décision</li>
+  </ul>
+
+  <h2>Livrables</h2>
+  <ul>
+    <li>Application R-Shiny</li>
+    <li>Rapport d’analyse et d’interprétation</li>
+    <li>Questionnaire de synthèse</li>
+    <li>Soutenance orale</li>
+  </ul>
+
+
+</body>
+</html>

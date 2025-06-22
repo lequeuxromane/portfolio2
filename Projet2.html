@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projet 2 - Analyse er prévision des séries temporelles sur l' Indice des Prix à la Consommation (IPC)</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f7f9fb;
+      color: #333;
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+	  text-align: justify;
+    }
+
+    h1, h2 {
+      color:black;
+    }
+	
+	header {
+            background: #b5c9ff;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            border-radius: 0 0 30px 30px;
+        }
+	header h1 {
+		margin: 0;
+	}
+
+
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 15px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .pdf-container {
+      margin: 30px 0;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .definition {
+      background: #e6f0ff;
+      border-left: 5px solid #b5c9ff;
+      padding: 10px 15px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+   a.back {
+            display: inline-block;
+            margin: 20px 0;
+            color: #b5c9ff;
+            text-decoration: none;
+            font-weight: 600;
+	}
+	
+	.tools {
+	  display: flex;
+	  gap: 10px;
+	  align-items: center;
+	  margin: 10px 0;
+	}
+	.tools img {
+	  height: 80px;
+	  width: auto;
+	}
+  </style>
+</head>
+<body>
+
+<a href="projets.html" class="back">← Retour à la liste des projets</a>
+
+<header><h1>Analyse temporelle de l’Indice des Prix à la Consommation</h1></header>
+<h2>SAÉ 3. 03 Description et prévision de données</h2>
+<p><strong>Compétence principale mobilisée </strong> : Valoriser des données dans un contexte professionnel</p>
+
+  <h2>Description du projet</h2>
+  <p>
+    Dans le cadre de cette SAÉ, notre groupe a travaillé sur l’analyse et la prévision d’une série chronologique portant sur l’Indice des Prix à la Consommation (IPC) dans le secteur de l’habillement et des chaussures. L’objectif était de déterminer si la crise sanitaire liée à la COVID-19 avait eu un impact sur cet indicateur économique.
+  </p>
+  <p>
+    Le projet s’inscrivait dans un contexte professionnel de chargé d’études économiques et statistiques, et visait à modéliser une série temporelle afin d’en extraire les tendances principales et de réaliser des prévisions à court terme.
+  </p>
+
+    <h2>Présentation de l'application</h2>
+  <p>
+    Le projet s’est déroulé principalement dans un Notebook R. Celui-ci comprenait plusieurs étapes :
+  </p>
+  <ul>
+    <li>Présentation du contexte, de la problématique et des données (source, période, fréquence mensuelle, unité de mesure)</li>
+    <li>Décomposition de la série selon un modèle additif afin d’isoler la tendance et la saisonnalité</li>
+    <li>Calcul des coefficients saisonniers et obtention d’une série désaisonnalisée</li>
+    <li>Analyse des résidus pour évaluer la qualité du modèle</li>
+    <li>Prévisions à court terme à l’aide d’une méthode de lissage exponentiel</li>
+  </ul>
+
+  <p>
+    L’interface développée permet de visualiser les différentes composantes de la série, les courbes de tendance, et les projections futures. Le code est structuré, commenté, et adapté à une analyse reproductible. Il met en œuvre à la fois les bibliothèques Python (Pandas, Matplotlib) et des techniques classiques d’analyse temporelle.
+  </p>
+
+  <h2>Extraits de l'application</h2>
+  <div class="screens">
+	<h3><li> Une première annalyse avec la visualisation de la série temporelles en identifiant une periode d'ananlyse pour répondre à la problématique (periode en jaune)</h3></li>
+    <img src="images/ipc1.png" alt="Série brute">
+	
+	<h3><li> Ensuite on ananlyse la tendance de notre periode. Dans notre cas, on à identifé deux periode assez différentes et donc deux tendance dans notre periode.</h3></li>
+    <img src="images/ipc2.png" alt="tendance">
+	
+	<h3><li> Enfin pour répondre à notre problématique on produit deux prévisions, une prévision sans prendre l'année du covid (ci-dessous) et une en prenant l'année du covid en année de reférence pour la prévision (voir notebook)</h3></li>
+    <img src="images/ipc3.png" alt="Prévisions à court terme">
+  </div>
+
+  <h2>Livrables</h2>
+  <ul>
+    <li>Synthèse de 4 pages en PDF</li>
+    <li>Notebook HTML commenté</li>
+  </ul>
+
+  <h2>Compétence mise en avant</h2>
+  <p>
+    Ce projet m’a permis de structurer une analyse statistique rigoureuse, de la rendre accessible et compréhensible à un public non technique via une synthèse écrite, et de m’exprimer en anglais sur les résultats clés.
+  </p>
+
+  <h3>Lien vers le notebook</h3>
+  <a href="docs/inflation (1).html" class="btn" target="_blank">Voir le notebook</a>
+</section>
+
+
+
+<h2>Outils utilisés</h2>
+  <div class="tools">
+    <img src="images/logo_r.png" alt="rstudio">
+    <img src="images/logo_excel.png" alt="Excel">
+    <img src="images/logo_word.png" alt="Word">
+  </div>
+  
+  <h2>Méthodes statistiques : </h2>
+	<li>Description de données temporelles (tendance, saisonnalité)</li>
+	<li>Prévision temporelle</li>
+	<li>Vérification des prévisions ( erreur quadratique moyenne, distribution des résidus)</li>
+
+
+
+<p> Voici un aperçu de la synthèse inspirée de revue de l'INSEE que nous avons rendu à la fin du projet.</p>
+
+<div class="pdf-container">
+  <iframe src="docs/SAE303_Indicedeprix_RomaneLequeux_MargotPhilippe_SolineThomas.pdf"></iframe>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+body.accueil {
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    margin: 0;
+    color: b;
+    text-align: justify;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenu {
+  max-width: 1000px; /* limite la largeur */
+  margin: 0 auto;    /* centre horizontalement */
+  padding: 20px;     /* espace intérieur */
+  text-align: justify;
+  line-height: 1.6;  /* lisibilité */
+}
+body.projets.header {
+    background: black; /* joli rouge/orangé */
+}
+h1 {
+    background-color: #b5c9ff; /* Couleur du bandeau */
+  color: black;              /* Couleur du texte */
+  padding: 20px 20px;        /* Espace autour du texte */
+  border-radius: 10px;       /* Optionnel : coins arrondis */
+  display: inline-block;     /* Pour que le fond s’adapte au contenu */
+  margin-bottom: 30px;
+  font-size: 2.5rem
+}
+
+h3 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+	color = white;
+}
+
+
+section.table-container {
+  max-height: 2000px;      /* ou la hauteur que tu souhaites */
+  overflow-y: auto;       /* active le scroll vertical si le contenu dépasse */
+  padding-right: 100px;    /* pour éviter que le scroll masque la dernière colonne */
+  border: 1px solid #ccc; /* optionnel, pour mieux voir la section */
+}
+
+.acc:hover {
+    background: #b5c9ff;
+    color: white;
+}
+
+.back:hover {
+    color: black;
+}
+
+/* Effet au survol d'une ligne */
+table tbody tr:hover {
+  background-color: #e0f0ff;  /* couleur de fond claire */
+  transform: scale(1.02);      /* léger agrandissement */
+  transition: all 0.3s ease;   /* transition douce */
+  cursor: pointer;             /* curseur qui change */
+}
+
+/* Pour que le tableau ne saute pas à cause du scale */
+table tbody tr {
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+a.cv-link {
+    color:#b5c9ff; /* gris discret */
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+a.cv-link:hover {
+    color: white; /* au survol */
+    text-decoration: none;
+}
+a.cv-link {
+    background: none;
+    color: #b5c9ff;
+    padding: 20px 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2em;
+    transition: background 0.3s, color 0.3s;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  background-color: #b5c9ff;
+}
+
+.tools {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 10px 0;
+}
+.tools img {
+  height: 40px;
+  width: auto;
+}
+
+.tooltip {
+  position: relative;
+  cursor: help;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 250px;
+  background-color: #b5c9ff;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -125px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 13px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #b5c9ff 50%, #d3f8e2 30%,  #d3f8e2);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+

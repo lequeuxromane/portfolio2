@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projet 1 – Outil décisionnel BPGO</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f7f9fb;
+      color: #333;
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+	  text-align: justify;
+    }
+
+    h1, h2 {
+      color:black;
+    }
+	
+	header {
+            background: #b5c9ff;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            border-radius: 0 0 30px 30px;
+        }
+	header h1 {
+		margin: 0;
+	}
+
+
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 15px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .pdf-container {
+      margin: 30px 0;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .definition {
+      background: #e6f0ff;
+      border-left: 5px solid #b5c9ff;
+      padding: 10px 15px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+   a.back {
+            display: inline-block;
+            margin: 20px 0;
+            color: #b5c9ff;
+            text-decoration: none;
+            font-weight: 600;
+	}
+	
+	.tools {
+	  display: flex;
+	  gap: 10px;
+	  align-items: center;
+	  margin: 10px 0;
+	}
+	.tools img {
+	  height: 80px;
+	  width: auto;
+	}
+  </style>
+</head>
+<body>
+
+<a href="projets.html" class="back">← Retour à la liste des projets</a>
+
+<header><h1>Conception d’un outil décisionnel pour la Banque Populaire Grand Ouest</h1></header>
+<h2>SAÉ 2.06 – Développer un outil décisionnel</h2>
+<p><strong>Compétence principale mobilisée </strong> : Traiter des données à des fins décisionnelles</p>
+
+<p>Dans le cadre de cette SAÉ 2.06, notre groupe a collaboré avec un partenaire professionnel réel : la Banque Populaire Grand Ouest (BPGO). </p>
+<p>L’objectif était de concevoir un tableau de bord décisionnel destiné à l’équipe marketing, afin d’identifier plus facilement les clients susceptibles de souscrire à un livret bancaire spécifique.</p>
+
+<p>Nous avons débuté par une série d’échanges avec le client afin de cerner les besoins fonctionnels, les contraintes techniques et les attentes visuelles concernant l’outil. Cela nous a permis d’établir un cahier des charges précis pour cadrer le projet.</p>
+
+<p>Nous avons ensuite travaillé sur un jeu de données anonymisé fourni par la BPGO au format Excel. Ne connaissant pas les données bancaires, une phase de compréhension des variables a été essentielle pour pouvoir interpréter correctement les résultats.</p>
+<p> Un travail important de nettoyage a ensuite été réalisé : suppression des variables inutiles à l’analyse, traitement des valeurs manquantes, homogénéisation des formats, etc.</p>
+
+<p>En groupe, nous avons ensuite croisé les différentes variables avec notre variable cible : la détention du livret bancaire. Cette analyse nous a permis d’identifier les facteurs influents, c’est-à-dire les caractéristiques les plus discriminantes pour prédire la souscription au livret.</p>
+
+<p>À partir de ces éléments, on a pu concevoir l’application sur Power BI, structurée en quatre pages :</p>
+
+<ul>
+  <li><h3><strong>Page 1</strong> – Accueil : présentation de la problématique.</h3></li>
+  <img src="images/powerbi_1.png" alt="Page accueil">
+  <li><h3><strong>Page 2</strong> – Portrait général non filtrable des apporteurs d’argent frais.</h3></li>
+  <img src="images/powerbi_2.png" alt="Portrait général">
+  <li><h3><strong>Page 3</strong> – Portrait dynamique avec filtres interactifs (sexe, situation familiale, McDonough…).</h3></li>
+  <img src="images/powerbi_3.png" alt="Page avec filtres interactifs">
+  <li><h3><strong>Page 4</strong> – Profil agrégé du segment sélectionné (effectif, part, montant total, etc.).</h3></li>
+  <img src="images/powerbi_4.png" alt="Page résumé statistique">
+</ul>
+
+<p>Nous avons également livré une <strong>notice d’utilisation</strong>, un <strong>rapport de projet</strong>, une <strong>infographie synthétique</strong> et présenté notre travail lors d’une soutenance professionnelle.</p>
+
+<p>Ce projet m’a permis de développer à la fois mes compétences techniques (nettoyage, traitement de données, conception de tableau de bord sur Power Bi...) mais aussi mes compétences professionnelle en assurant la gestion de projet, les réunion et interractions avec le professionnel.</p>
+<p> La compétence la plus développer à l'issue de cette expérience restera celle en lien avec le <strong>développement d'un outil décisionnel</strong>. En effet aujourd'hui dans de nombreuses entreprises, les tableaux de bords et les applications sont des outils concrets qui appuie la rpsie de décision.</p>
+
+
+
+<h2>Outils utilisés</h2>
+  <div class="tools">
+    <img src="images/logo_powerbi.png" alt="Power BI">
+    <img src="images/logo_excel.png" alt="Excel">
+    <img src="images/logo_word.png" alt="Word">
+    <img src="images/logo_ppt.png" alt="PowerPoint">
+  </div>
+
+
+<p> Voici un aperçu de l'infographie que j'ai conçu à la fin du projet afin de résumer visuellement les résultats de l'analyse.</p>
+
+<div class="pdf-container">
+  <iframe src="docs/poster_A1_BPGO.pdf"></iframe>
+</div>
+
+
+</body>
+</html>
